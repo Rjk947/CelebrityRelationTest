@@ -1,0 +1,19 @@
+/* src/app/compare-employees/compare-employees.component.css */
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.employee {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.employee img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

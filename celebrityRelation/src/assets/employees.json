@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "band": "B3",
+        "photoUrl": "assets/images/alice.jpg",
+        "about": "Experience Software Engineer"
+
+    },
+
+    {
+        "id": 2,
+        "name": "Bob Johnson",
+        "band": "B4",
+        "photoUrl": "assets/images/bob.jpg",
+        "about": "Experience Project Manager"
+
+    }
+]

@@ -1,0 +1,32 @@
+<!-- src/app/compare-employees/compare-employees.component.html -->
+<div>
+    <label>Select Employee 1:</label>
+    <select #employeeSelect (change)="selectEmployee(employeeSelect.value, 'left')">
+        <option *ngFor="let employee of employees" [value]="employee.id">{{ employee.name }}</option>
+    </select>
+</div>
+
+<div>
+    <label>Select Employee 2:</label>
+    <select #employeeSelect (change)="selectEmployee(employeeSelect.value, 'right')">
+        <option *ngFor="let employee of employees" [value]="employee.id">{{ employee.name }}</option>
+    </select>
+</div>
+
+<div class="comparison-container">
+    <div class="employee" *ngIf="employee1">
+        <h2>{{ employee1.name }}</h2>
+        <img [src]="employee1.photoUrl" alt="{{ employee1.name }}" />
+        <p>ID: {{ employee1.id }}</p>
+        <p>Band: {{ employee1.band }}</p>
+        <p>About: {{ employee1.about }}</p>
+    </div>
+
+    <div class="employee" *ngIf="employee2">
+        <h2>{{ employee2.name }}</h2>
+        <img [src]="employee2.photoUrl" alt="{{ employee2.name }}" />
+        <p>ID: {{ employee2.id }}</p>
+        <p>Band: {{ employee2.band }}</p>
+        <p>About: {{ employee2.about }}</p>
+    </div>
+</div>
